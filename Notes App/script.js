@@ -2,7 +2,7 @@ showNotes();
 
 // If user adds a note, save it to the localStorage
 let addBtn = document.getElementById("addBtn");
-addBtn.addEventListener("click", function(e) {
+addBtn.addEventListener("click", function (e) {
   let addTxt = document.getElementById("addTxt");
   let notes = localStorage.getItem("notes");
   if (notes == null) {
@@ -25,7 +25,7 @@ function showNotes() {
     notesObj = JSON.parse(notes);
   }
   let html = "";
-  notesObj.forEach(function(element, index) {
+  notesObj.forEach(function (element, index) {
     html += `
             <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
                     <div class="card-body">
